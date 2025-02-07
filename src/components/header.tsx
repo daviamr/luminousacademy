@@ -11,7 +11,7 @@ export function Header() {
       <div className="relative bg-[#383838] w-full py-4 rounded-full mt-3 z-20">
         <div className="relative flex items-center justify-between px-5">
           <a href="#">
-            <img src="src\assets\logo.png" alt="Luminous Academy" className="max-w-[34px] rounded-full" />
+            <img src="https://i.imgur.com/ObiQYXy.png" alt="Luminous Academy" className="max-w-[34px] rounded-full" />
           </a>
           {isOpen ? <MenuIcon size={28} className="text-[#ffffff] cursor-pointer" onClick={() => { setIsOpen(!isOpen) }} /> : <XIcon size={28} className="text-[#ffffff] cursor-pointer" onClick={() => { setIsOpen(!isOpen) }} />}
         </div>
@@ -40,7 +40,7 @@ export function Header() {
             <div className="w-[80px] h-[1px] bg-gradient-to-r from-white to-transparent"></div>
           </div>
           <Button variant={"ghost"} className="bg-purple-700 text-xl py-6 px-8 rounded-full">
-            <img src="src\assets\discord.webp" alt="Comunidade do discord" className="max-w-[32px]" />
+            <img src="https://i.imgur.com/J5xjUV9.png" alt="Comunidade do discord" className="max-w-[32px]" />
             Discord
           </Button>
         </div>
