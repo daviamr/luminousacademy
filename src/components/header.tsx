@@ -1,4 +1,4 @@
-import { HouseIcon, MenuIcon, XIcon } from "lucide-react";
+import { MenuIcon, XIcon } from "lucide-react";
 import { useState } from "react"
 import { Button } from "./ui/button";
 import '@/global.css'
@@ -8,19 +8,20 @@ export function Header() {
 
   return (
     <>
-      <div className="relative bg-[#383838] w-full py-3 rounded-full mt-3 z-20">
-        <div className="relative flex items-center justify-between px-4">
-          <img src="src\assets\react.svg" alt="Luminous Academy" />
+      <div className="relative bg-[#383838] w-full py-4 rounded-full mt-3 z-20">
+        <div className="relative flex items-center justify-between px-5">
+          <a href="#">
+            <img src="src\assets\logo.png" alt="Luminous Academy" className="max-w-[34px] rounded-full" />
+          </a>
           {isOpen ? <MenuIcon size={28} className="text-[#ffffff] cursor-pointer" onClick={() => { setIsOpen(!isOpen) }} /> : <XIcon size={28} className="text-[#ffffff] cursor-pointer" onClick={() => { setIsOpen(!isOpen) }} />}
         </div>
       </div>
 
-      <nav className={`absolute z-10 top-5 left-0 w-full bg-[#2b2b2b] overflow-hidden duration-300 ${!isOpen ? 'h-[calc(100%-20px)] pt-16' : 'h-0 pt-0'}`}>
-        <ul className="flex flex-col items-left pt-10">
-          <div className="w-max m-auto flex flex-col gap-2">
+      <nav className={`absolute z-10 -top-3 left-0 w-full bg-[#2b2b2b] overflow-hidden duration-200 ${!isOpen ? 'h-[calc(100%)] pt-16' : 'h-0 pt-0'}`}>
+        <ul className="flex flex-col items-left pt-14">
+          <div className="w-max m-auto flex flex-col items-center gap-2">
             <li className="hover:text-purple-700 duration-300">
               <a href="#" className="flex items-center gap-2">
-                <HouseIcon size={18} />
                 Início
               </a>
             </li>
@@ -39,7 +40,7 @@ export function Header() {
             <div className="w-[80px] h-[1px] bg-gradient-to-r from-white to-transparent"></div>
           </div>
           <Button variant={"ghost"} className="bg-purple-700 text-xl py-6 px-8 rounded-full">
-            <img src="src\assets\discord.webp" alt="Comunidade do discord" className="max-w-[32px]"/>
+            <img src="src\assets\discord.webp" alt="Comunidade do discord" className="max-w-[32px]" />
             Discord
           </Button>
         </div>
