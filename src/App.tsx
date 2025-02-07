@@ -1,5 +1,5 @@
 import { Header } from './components/header'
-import { Whatsapp } from './components/whatsapp'
+// import { Whatsapp } from './components/whatsapp'
 import './global.css'
 import { HomePage } from './pages/homePage'
 
