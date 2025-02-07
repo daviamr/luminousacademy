@@ -42,13 +42,13 @@ export function HomePage() {
 
             <div className="flex items-center justify-center gap-2">
               <div className="w-full h-[1px] bg-gradient-to-r from-transparent to-white"></div>
-              <p className="text-center text-2xl font-bold bg-gradient-to-r from-white via-purple-700 to-[hsl(189.18_100%_50%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-text-gradient min-w-[180px]">O que você vai aprender?</p>
+              <p className="text-center text-2xl font-bold bg-gradient-to-r from-white via-purple-700 to-[hsl(189.18_100%_50%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-text-gradient min-w-[180px] select-none">O que você vai aprender?</p>
               <div className="w-full h-[1px] bg-gradient-to-r from-white to-transparent"></div>
             </div>
 
             <p className="text-center mt-2 mb-4">Descubra as habilidades que você será capaz de desenvolver após concluir o curso.</p>
 
-            <ul className="grid grid-cols-1 justify-between gap-2 mt-4">
+            <ul className="grid grid-cols-1 justify-between gap-2 mt-4 select-none">
               <li className="font-bold bg-gradient-to-r from-purple-700 to-transparent  px-4 py-2 rounded-tl-xl rounded-bl-xl hover:scale-[1.02] duration-300 cursor-pointer">
                 &bull; Aimbot
               </li>

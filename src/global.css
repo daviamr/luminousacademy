@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .clip-custom {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 90% 100%, 0% 100%);
+  }
+}
+
 /* ... */
 
 * {
@@ -11,6 +17,7 @@
 html {
   overflow-x: none;
   font-family: "Poppins", serif;
+  --roxo-default: #B200FF;
 }
 
 .animate-delay-1000 {
@@ -46,7 +53,7 @@ html {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 240, 5%, 12%;
+    --background: 207.69deg 86.67% 2.94%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
