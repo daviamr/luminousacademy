@@ -21,7 +21,7 @@ export function NewHeader() {
               }
             </button>
             <a href="#">
-              <img src="src\assets\luminous-logo.png" alt="Luminous Academy" className="max-w-[120px] cursor-pointer relative z-20" />
+              <img src="https://i.imgur.com/eVfzS4A.png" alt="Luminous Academy" className="max-w-[120px] cursor-pointer relative z-20" />
             </a>
           </div>
 
