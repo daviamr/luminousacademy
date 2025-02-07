@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <div className='h-full'>
-        <div className='relative h-full max-w-[1024px] px-4'>
         <Header />
+        <div className='relative h-full max-w-[1024px] px-4'>
           <HomePage />
           {/* <Whatsapp /> */}
         </div>

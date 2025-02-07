@@ -17,8 +17,8 @@ export function Header() {
         </div>
       </div>
 
-      <nav className={`absolute z-10 -top-3 left-0 w-full bg-[#2b2b2b] overflow-hidden duration-200 ${!isOpen ? 'h-[calc(100%)] pt-16' : 'h-0 pt-0'}`}>
-        <ul className="flex flex-col items-left pt-14">
+      <nav className={`absolute z-10 -top-3 left-0 w-full bg-[#2b2b2b] overflow-hidden duration-200 ${!isOpen ? 'h-[calc(100%+12px)] pt-16' : 'h-0 pt-0'}`}>
+        <ul className="flex flex-col items-left pt-20">
           <div className="w-max m-auto flex flex-col items-center gap-2">
             <li className="hover:text-purple-700 duration-300">
               <a href="#" className="flex items-center gap-2">
