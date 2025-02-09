@@ -1,5 +1,7 @@
+import { AccordionItems } from "../accordionItems";
 import { Button } from "../ui/button";
 import { motion } from 'framer-motion';
+import { Plans } from "./n_offers";
 
 export function NewHomePage() {
   return (
@@ -262,6 +264,14 @@ export function NewHomePage() {
 
             </div>
 
+          </div>
+
+          <div>
+            <Plans/>
+          </div>
+
+          <div className="mt-6">
+            <AccordionItems />
           </div>
 
         </div>
