@@ -20,7 +20,7 @@ export function NewFooter() {
                 <ul className="flex gap-4">
                   <li>
                     <a href="#">
-                      <img src="src\assets\youtube.svg" alt="Luminouse Academy Youtube" className="max-w-[24px]" />
+                      <img src="https://i.imgur.com/u82QYC1.png" alt="Luminouse Academy Youtube" className="max-w-[24px]" />
                     </a>
                   </li>
                   <li>
@@ -30,7 +30,7 @@ export function NewFooter() {
                   </li>
                   <li>
                     <a href="#">
-                      <img src="src\assets\instagram.svg" alt="Luminouse Academy Instagram" className="max-w-[24px]" />
+                      <img src="https://i.imgur.com/V54CWWp.png" alt="Luminouse Academy Instagram" className="max-w-[24px]" />
                     </a>
                   </li>
                 </ul>

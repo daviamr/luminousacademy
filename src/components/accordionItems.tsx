@@ -7,7 +7,7 @@ import {
 
 export function AccordionItems() {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion type="single" collapsible className="w-full lg:flex lg:flex-col lg:gap-4">
       <AccordionItem value="item-1">
         <AccordionTrigger className="lg:text-[16px]">Como posso acessar o curso?</AccordionTrigger>
         <AccordionContent>
