@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { NewDesktopHeader } from "./n_desktop_header";
 
 export function NewHeader() {
   const [openMenu, isOpenMenu] = useState<boolean>(false);
@@ -8,33 +9,41 @@ export function NewHeader() {
   return (
     <>
       <div className="relative">
-        <div className="bg-background flex items-centers justify-between py-8 px-4 relative">
+        <div className={`bg-background flex items-centers justify-between py-8 px-4 sm:px-8 lg:py-10 relative max-w-[1280px] m-auto`}>
 
-          <div className="flex items-center gap-4">
-            <button
-              className="bg-white bg-opacity-10 border-[1px] border-[#B200FF] p-1 z-20"
-              onClick={() => isOpenMenu(!openMenu)}>
-              {
-                !openMenu ?
-                  <Menu size={30} /> :
-                  <X size={30} />
-              }
-            </button>
-            <a href="#">
-              <img src="https://i.imgur.com/eVfzS4A.png" alt="Luminous Academy" className="max-w-[120px] cursor-pointer relative z-20" />
-            </a>
+          {/*mobile*/}
+          <div className="flex justify-between items-center gap-4 lg:hidden w-full">
+            <div className="flex items-center gap-4">
+              <button
+                className="bg-white bg-opacity-10 border-[1px] border-[#B200FF] p-1 z-20"
+                onClick={() => isOpenMenu(!openMenu)}>
+                {
+                  !openMenu ?
+                    <Menu size={30} /> :
+                    <X size={30} />
+                }
+              </button>
+
+              <a href="#">
+                <img src="https://i.imgur.com/eVfzS4A.png" alt="Luminous Academy" className="max-w-[120px] cursor-pointer relative z-20" />
+              </a>
+            </div>
+
+            <Button variant={"ghost"} className="relative z-20">
+              <p
+                className="bg-gradient-to-r from-white via-[#B200FF] to-[hsl(189.18_100%_50%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-text-gradient uppercase">
+                Ver cursos
+              </p>
+            </Button>
           </div>
 
-          <Button variant={"ghost"} className="relative z-20">
-            <p
-              className="bg-gradient-to-r from-white via-[#B200FF] to-[hsl(189.18_100%_50%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-text-gradient uppercase">
-              Ver cursos
-            </p>
-          </Button>
+          {/*desktop*/}
+          <NewDesktopHeader/>
 
         </div>
 
-        <nav className={`absolute top-0 left-0 w-full h-max bg-[rgba(1,8,14,0.9)] px-4 z-10 pt-[104px] duration-300 ${openMenu ? 'opacity-100' : 'opacity-0 '}`}>
+        {/*nav mobile*/}
+        <nav className={`absolute top-0 left-0 w-full h-max bg-[rgba(1,8,14,0.9)] px-4 sm:px-8 z-10 pt-[104px] duration-300 ${openMenu ? 'opacity-100' : 'opacity-0 '} lg:hidden`}>
           <ul className="py-6">
             <div className="flex flex-col gap-2">
 

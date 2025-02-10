@@ -1,4 +1,4 @@
-import { Footer } from './components/footer'
+import { NewFooter } from './components/new-components/n_footer'
 import { NewHeader } from './components/new-components/n_header'
 import { NewHomePage } from './components/new-components/n_home'
 import { Whatsapp } from './components/whatsapp'
@@ -11,11 +11,11 @@ function App() {
         <NewHeader/>
 
         {/* main */}
-        <div className='px-4'>
+        <div>
           <NewHomePage/>
         </div>
         <Whatsapp/>
-        <Footer/>
+        <NewFooter/>
       </div>
     </>
   )

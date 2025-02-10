@@ -48,10 +48,10 @@ export function Plans() {
         <div className="w-full h-[1px] bg-gradient-to-r from-white to-transparent"></div>
       </div>
       
-      <Carousel className="w-full max-w-[calc(100%_-_80px)] ">
+      <Carousel className="w-full max-w-[calc(100%_-_80px)]">
         <CarouselContent className="-ml-1">
           {plans.map((i) => (
-            <CarouselItem key={i.id} className="pl-1 max-sm:basis-1/ lg:basis-1/3">
+            <CarouselItem key={i.id} className="pl-1 sm:basis-1/2 lg:basis-1/3">
               <div className="relative p-1">
                 <Card>
                   <CardContent className="flex items-center justify-center p-6">
